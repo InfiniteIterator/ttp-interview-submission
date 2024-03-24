@@ -11,11 +11,21 @@
             {{ Form::open(['url' => '/widgets', 'class' => '']) }}
                 <div class="form-group">
                     {{ Form::label('name', 'Name') }}
-                    {{ Form::text('name', null, ['class' => 'form-control']) }}
+                    {{ Form::text('name', null, ['class' => 'form-control' . ($errors->has('name') ? ' is-invalid' : '')]) }}
+                    @if ($errors->has('name'))
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $errors->first('name') }}</strong>
+                        </span>
+                    @endif
                 </div>
                 <div class="form-group">
                     {{ Form::label('color', 'Color') }}
-                    {{ Form::text('color', null, ['class' => 'form-control']) }}
+                    {{ Form::text('color', null, ['class' => 'form-control' . ($errors->has('color') ? ' is-invalid' : '')]) }}
+                    @if ($errors->has('color'))
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $errors->first('color') }}</strong>
+                        </span>
+                    @endif
                 </div>
                 <div class="form-group">
                     {{ Form::label('description', 'Description') }}
