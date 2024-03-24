@@ -18,3 +18,9 @@ Route::get('/', function()
 Route::get('/widgets',[
 	'uses' => 'WidgetController@index'
 ]);
+
+Route::post('/widgets', [
+	'as' => 'widgets.add',
+	'uses' => 'WidgetController@add'
+]);
+

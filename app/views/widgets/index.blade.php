@@ -7,6 +7,7 @@
     <body>
         <div class="container">
 
+            <h2 class="mt-5 mb-3">Add a New Widget</h2>
             {{ Form::open(['url' => '/widgets', 'class' => '']) }}
                 <div class="form-group">
                     {{ Form::label('name', 'Name') }}
