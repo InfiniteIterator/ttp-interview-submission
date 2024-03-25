@@ -72,9 +72,13 @@ You have two options.
 
 # Possible improvements in my submissions
 *  Move the logic out of controller into
-  -> Validators
-  -> Services
-  -> DB Layer
-  -> Implement Single Responsibility Pattern (SRP)
-  -> Interfaces
-  -> Many more changes to move towards enterprise solution, instead of a Laravel quick app
+
+  - Validators
+
+  - Services
+
+  - DB Layer
+
+* Implement Single Responsibility Pattern (SRP)
+* Interfaces
+* Many more changes to move towards enterprise solution, instead of a Laravel quick app
