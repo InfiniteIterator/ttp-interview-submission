@@ -66,3 +66,15 @@ You have two options.
 
 * Given more time, what improvements to the existing codebase would you make? 
 
+
+# Possible improvements in the initial code
+* Update the composer file so that it requires PHP 7.4 (to avoid the mistake that I made to setup on PHP 8.2)
+
+# Possible improvements in my submissions
+*  Move the logic out of controller into
+  -> Validators
+  -> Services
+  -> DB Layer
+  -> Implement Single Responsibility Pattern (SRP)
+  -> Interfaces
+  -> Many more changes to move towards enterprise solution, instead of a Laravel quick app
