@@ -24,3 +24,7 @@ Route::post('/widgets', [
 	'uses' => 'WidgetController@add'
 ]);
 
+Route::get('/widgets/{id}/edit', [
+    'as' => 'widgets.edit',
+    'uses' => 'WidgetController@edit'
+]);
