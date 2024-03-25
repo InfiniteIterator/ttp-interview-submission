@@ -28,3 +28,8 @@ Route::get('/widgets/{id}/edit', [
     'as' => 'widgets.edit',
     'uses' => 'WidgetController@edit'
 ]);
+
+Route::put('/widgets/{id}', [
+    'as' => 'widgets.put',
+    'uses' => 'WidgetController@update'
+]);
