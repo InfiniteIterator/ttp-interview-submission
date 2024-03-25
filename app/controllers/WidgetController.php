@@ -46,6 +46,16 @@ class WidgetController extends BaseController
 
         return Redirect::to('/widgets');
     }
+
+    public function destroy($id)
+    {
+        $widget = Widget::find($id);
+        if (!$widget) {
+            return Response::make('', 500);
+        }
+        $widget->delete();
+        return '';
+    }
 }
 
 ?>

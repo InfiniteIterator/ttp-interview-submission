@@ -33,3 +33,13 @@ Route::put('/widgets/{id}', [
     'as' => 'widgets.put',
     'uses' => 'WidgetController@update'
 ]);
+
+Route::get('/api/widgets', function() {
+    return Response::json(Widget::all());
+});
+
+Route::get('/api/widget/delete/{id}', [
+	'as' => 'widget.destory',
+	'uses' => 'WidgetController@destroy'
+]);
+
